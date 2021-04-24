@@ -1,0 +1,24 @@
+--cpu=Cortex-M4.fp
+"blink_1000\system_stm32f4xx.o"
+"blink_1000\stm32f4xx_hal_flash.o"
+"blink_1000\stm32f4xx_hal.o"
+"blink_1000\stm32f4xx_hal_gpio.o"
+"blink_1000\stm32f4xx_hal_flash_ramfunc.o"
+"blink_1000\stm32f4xx_hal_pwr.o"
+"blink_1000\stm32f4xx_hal_tim_ex.o"
+"blink_1000\stm32f4xx_hal_flash_ex.o"
+"blink_1000\stm32f4xx_hal_tim.o"
+"blink_1000\stm32f4xx_hal_dma.o"
+"blink_1000\stm32f4xx_hal_rcc.o"
+"blink_1000\stm32f4xx_hal_rcc_ex.o"
+"blink_1000\stm32f4xx_hal_dma_ex.o"
+"blink_1000\stm32f4xx_hal_cortex.o"
+"blink_1000\stm32f4xx_hal_pwr_ex.o"
+"blink_1000\stm32f4xx_hal_msp.o"
+"blink_1000\main.o"
+"blink_1000\stm32f4xx_it.o"
+"blink_1000\startup_stm32f407xx.o"
+--library_type=microlib --scatter "Blink_1000\Blink_1000.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Blink_1000.map" -o Blink_1000\Blink_1000.axf
